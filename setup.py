@@ -55,8 +55,7 @@ setup(
         'pygame==1.9.6',
         'opencv-python',
         'scipy',
-        'gym',
-        'baselines>=0.1.6',
+        'gym'
     ],
     extras_require={
         'tf_cpu': ['tensorflow<2.0'],

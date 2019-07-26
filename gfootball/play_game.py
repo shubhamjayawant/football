@@ -52,7 +52,11 @@ def main(_):
   env.reset(cfg)
   try:
     while True:
-      _, _, done, _ = env.step(None)
+      nextState, reward, done, _ = env.step(None)
+
+      print(nextState)
+
+
       if done:
         env.reset(cfg)
   except KeyboardInterrupt:
